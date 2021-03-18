@@ -46,6 +46,14 @@ ol {
     font-size: 25px;
 }
 
+.processor{
+    display: flex;
+}
+
+.product_text{
+    padding: 20px;
+}
+
 .container{
     max-width: 1000px;
     flex: 1;
