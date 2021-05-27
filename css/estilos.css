@@ -2,60 +2,61 @@ body{
     margin: 0;
 }
 
-.header{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 145px;
-    flex-wrap: wrap;
-}
-
-.menu{
-    height: inherit;
-}
-
-.header ol{
-    display: flex;
-    height: inherit;
-}
-
-.header ol li{
-    height: inherit;
-}
-
-.header a {
-    color: white;
-    text-decoration: none;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-}
-
-ol {
-    list-style: none;
-}
-
-.vista1{
-    background: white;
-}
-
-.vista1 p{
+h2{
     font-size: 25px;
 }
 
-.processor{
+.header{
+    background-color: #242544;
+    width: 100%;
+    height: 150px;
     display: flex;
+    align-items: center;
+    /*color: #EBBF9C;*/
+    color: white;
+}
+.menu{
+    width: 10%;
+}
+.logo{
+    display: flex;
+    width: 25%;;
+    align-items: center;
 }
 
-.product_text{
-    padding: 20px;
+.busqueda{
+    width: 40%;
+}
+.cuenta{
+    width: 15%;
+}
+.carrito{
+    width: 10%;
+}
+
+.header h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.products{
+    display: flex;
+}
+.space{
+    width: 10%;
+    background-color: honeydew;
+}
+
+.productos{
+    width: 90%;
+    background-color: gray;
+    height: 500px;
 }
 
 .container{
-    max-width: 1000px;
+    /* border: 1px solid red; */
+    max-width: 1100px;
+    /* width: 100%; */
     flex: 1;
     margin: 0 auto;
     display: inherit;
@@ -63,8 +64,4 @@ ol {
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
-} 
-
-footer{
-    color: white;
 }
