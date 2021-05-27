@@ -1,0 +1,154 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 0;
+}
+p{
+    margin-bottom: 2px;
+}
+.container{
+    width: 90%;
+    max-width: 1080px;
+}
+.container2{
+    width: 85%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.container3{
+    width: 90%;
+    max-width: 1080px;
+    text-decoration: solid;
+
+}
+
+.header{
+    background-color: rgb(35,42,60);
+    color: white;
+    padding: 2px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.logo-nav-conatiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.2em;
+}
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .navigation ul li {
+    display: inline-block;
+    }
+        .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.45s linear;
+        border-radius: 5px;
+        }
+.navigation ul li a:hover{
+    background-color: rgb(246,108,9);
+}
+.main {
+    padding-top: 10rem;
+}
+.row{
+    margin-right: 0.1rem;
+    margin-left: 0.2rem;
+}
+.products{
+    display: block;
+    transition: all 0.40s linear;
+    padding: 5px;
+}
+.product{
+    border-color: black;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    display: block;
+    border: 3px;
+    
+}
+.product-image{
+    border-radius: 2px;
+    background-color: rgb(247,168,3);
+    border: 1px;
+    display: block;
+}
+.image{ 
+    text-align: center;
+    text-transform: none;
+    padding: 5px;  
+}
+
+.img-responsive{
+    display: block;
+    width: 20%;
+    height: auto;
+}
+.row div div div div a{
+    text-decoration: none;
+        color: black;
+}
+
+.footer{
+    display: block;
+    background-color: rgb(35,42,60);
+    padding: 1 rem 0;
+    text-align: center;
+    margin-top: 3px;
+}
+.footer div p{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+@media only screen and (max-width: 767px){
+        .menu-icon{
+            display: block;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+        }
+        .navigation{
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .navigation ul{
+            display: none;
+        }
+        .navigation ul.show{
+            display: block;
+        }
+        .navigation ul li {
+        display: block;
+        }
+            .navigation ul li a {
+            display: block;
+            padding: 0.5rem 0;
+            transition: all 0.45s linear;
+            border-radius: 5px;
+            }
+    .navigation ul li a:hover{
+        background-color: rgb(246,108,9);
+    }
+}
