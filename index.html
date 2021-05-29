@@ -7,26 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MACWARE</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/fonts/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="menu">
-                <h2>Menu</h2>
-            </div>
-
             <div class="logo">
-                <img src="/images/logo_superior.jpg" alt="logo macware" width="120px" height="120px">
+                <img src="/images/logo_superior.jpg" alt="logo macware" width="100px" height="100px">
                 <h1>MAC<br>WARE</h1>
             </div>
             <div class="busqueda">
-                <h2>Motor de busqueda</h2>
+                <!-- <h2>Motor de busqueda  </h2> -->
+                <input type="">
+                <span class="icon-search"></span>
             </div>
             <div class="cuenta">
-                <h2>Cuenta</h2>
+                <h2>Cuenta  </h2>
+                <span class="icon-user"></span>
             </div>
             <div class="carrito">
                 <h2>Carrito</h2>
+                <span class="icon-cart"></span>
             </div>
         </div>
     </header>
@@ -34,83 +35,64 @@
     <section class="products">
         <div class="container">
             <div class="space">
+                <div class="menu">
+                    <div class="burguer-button">
+                        <span class="icon-menu"></span>
+                        <h2>MENU</h2>
+                    </div>
+                    <nav>
+                        <ol>
+                            <li>
+                                <a class="link" href="/paginas/procesadores.html">Procesadores</a>
+                            </li>
+                            <li>
+                                <a class="link" href="/paginas/grafica.html">Gráficas</a>
+                            </li>
+                            <li>
+                                <a class="link">Tarjeta madre</a>
+                            </li>
+                            <li>
+                                <a class="link">Almacenamiento</a>
+                            </li>
+                            <li>
+                                <a class="link" >Gabinetes</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
             <div class="productos">
-                <div class="promos">
-                    
+                <div class="ofertas">
+                    <div class="container-slider">
+                        <div class="slider" id="slider">
+                            <div class="slider_section">
+                                <img src="images/1.png" alt="" class="slider_img">
+                            </div>
+                            <div class="slider_section">
+                                <img src="images/2.png" alt="" class="slider_img">
+                            </div>
+                            <div class="slider_section">
+                                <img src="images/3.png" alt="" class="slider_img">
+                            </div>
+                        </div>
+                        <div class="slider_btn slider_btn-left" id="btn-left">
+                            <!-- <span class="icon-undo2"></span> -->
+                            &#60;
+                        </div>
+                        <div class="slider_btn slider_btn-rigth" id="btn-right">
+                            <!-- <span class="icon-redo2"></span> -->
+                            &#62;
+                        </div>
+
+                    </div>
                 </div>
-                <div class="other_products">
+
+                <div class="other-products">
 
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!-- 
-    <header class="header">
-        <div class="container">
-            <figure>
-                <img src="images/macware_logo.jpeg" height="100px" alt="logo de http:www.algo.com">
-            </figure>
-            <nav>
-                <ol>
-                    <li>
-                        <a class="link" href="#procesador">Procesadores</a>
-                    </li>
-                    <li>
-                        <a class="link">Gráfica</a>
-                    </li>
-                    <li>
-                        <a class="link">Tarjeta madre</a>
-                    </li>
-                    <li>
-                        <a class="link"></a>
-                    </li>
-                    <li>
-                        <a class="link">Almacenamiento</a>
-                    </li>
-                    <li>
-                        <a class="link" >Gabinetes</a>
-                    </li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-
-    <section id="procesador" class="processor">
-        <div class="container">
-            <div class="product_text">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, dolorum repellat ducimus facere quasi placeat rem eaque unde hic. Possimus consectetur repellendus dignissimos veniam id enim molestias ad reprehenderit expedita!
-                </p>
-            </div>
-            <figure class="product_image">
-                <img src="images/intel7.png" alt="imagen core i7 intel" width="400px">
-            </figure>
-        </div>
-    </section> -->
-
-
-    <!-- <div class="conteiner">
-        <header>
-            <h1>
-                Desarrolo web perros
-            </h1>
-        </header>
-    
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aliquid ab velit eius neque maxime iusto ipsam quae vero sunt ad exercitationem cupiditate quibusdam et cum, temporibus voluptatem doloribus alias?
-        </p>
-        <p>
-            Pagina web del cuso 2602 de Desarrollo web en la fes acatlán.
-            Enlazate a: <a href="https://www.facebook.com/groups/883269959163637/" target="_black">Desarrollo web</a>
-        </p>
-        
-        <footer>
-            <h5>Derechos reservados. Desing with love ❤ by <a href="https://www.facebook.com/roberto.vizcara" target="_black">Roberto Vizcarra</a></h5>
-        </footer>
-    </div> -->
-
+    <script src="main.js"></script>
 </body>
 </html>
