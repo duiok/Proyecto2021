@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding-top: 120px;
 }
 
 h2{
@@ -13,10 +14,13 @@ h2{
     height: 120px;
     display: flex;
     align-items: center;
-    /*color: #EBBF9C;*/
     color: white;
-    position: sticky;
+
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .logo{
@@ -32,6 +36,11 @@ h2{
     padding: 0 30px;
     justify-content: space-between;
 }
+.buscador{
+    width: 300px;
+    font-size: 20px;
+}
+
 .cuenta{
     width: 20%;
     display: flex;
@@ -55,14 +64,14 @@ h2{
 .products{
     display: flex;
     margin-top: 5px;
+    height: 700px;
 }
 .space{
     width: 15%;
     background-color: #242544;
     color: white;
     height: 300px;
-/*     position: sticky;
- */}
+}
 
 .bur-but{
     width: 40px;
@@ -82,6 +91,10 @@ h2{
 .menu ol li{
     height: inherit;
     padding: 10px 0;
+}
+
+.menu ol li:hover{
+    background: #434343;
 }
 
 .menu a{
@@ -105,16 +118,20 @@ ol, ul{
     margin: 10px 0;
 }
 
+.burguer-button:hover{
+    background-color: #434343;
+}
+
 
 .productos{
     width: 85%;
     padding: 30px 45px;
-    height: 1000px;
+    height: 700px;
 }
 
 .ofertas{
     width: 100%;
-    height: 270px;
+    height: 300px;
 }
 
 .container-slider{
@@ -169,9 +186,89 @@ ol, ul{
     right: 10px;
 }
 
-.other_products{
-    height: 2000px;
+.other-products{
+    height: 400px;
+    display: flex;
+    /* background: rgba(0, 0, 0, 0.1); */
 }
+
+.ofertas_diarias{
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    /* background: rgba(0, 0, 0, 0.1); */
+}
+
+.desc{
+    background: rgba(0, 0, 0, 0.3);
+    width: 180px;
+    height: 60px;
+    margin: 20px 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.desc p{
+    margin: 0;
+}
+
+.footer{
+    margin: 0;
+    padding: 0;
+    background: #242544;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacto{
+    max-width: 400px;
+    color: white;
+}
+
+.contacto p{
+    font-size: 20px;
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.sociales{
+    align-items: center;
+}
+
+.redes{
+    height: 50px;
+    align-items: center;
+}
+
+.atencion{
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.atencion h3{
+    margin: 15px 0;
+    padding: 0 30px;
+}
+
+.social-link.facebook{
+    background-image: url(../images/facebook.png);
+}
+.social-link.twitter{
+    background-image: url(../images/gorjeo.png);
+}
+.social-link.instagram{
+    background-image: url(../images/instagram.png);
+}
+
 
 .container{
     /* border: 1px solid red; */
