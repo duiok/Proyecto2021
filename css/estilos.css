@@ -1,6 +1,11 @@
 body{
     margin: 0;
     padding-top: 120px;
+    width: 100%;
+}
+
+* {
+    font-family: 'Source Sans Pro';
 }
 
 h2{
@@ -118,11 +123,6 @@ ol, ul{
     margin: 10px 0;
 }
 
-.burguer-button:hover{
-    background-color: #434343;
-}
-
-
 .productos{
     width: 85%;
     padding: 30px 45px;
@@ -130,7 +130,7 @@ ol, ul{
 }
 
 .ofertas{
-    width: 100%;
+    width: 800px;
     height: 300px;
 }
 
@@ -187,8 +187,9 @@ ol, ul{
 }
 
 .other-products{
-    height: 400px;
+    height: 300px;
     display: flex;
+    margin-top: 40px;
     /* background: rgba(0, 0, 0, 0.1); */
 }
 
@@ -213,8 +214,6 @@ ol, ul{
 }
 
 .footer{
-    margin: 0;
-    padding: 0;
     background: #242544;
     height: 160px;
     display: flex;
@@ -225,6 +224,7 @@ ol, ul{
 .contacto{
     max-width: 400px;
     color: white;
+    margin: 0 30px;
 }
 
 .contacto p{
@@ -241,6 +241,7 @@ ol, ul{
 
 .sociales{
     align-items: center;
+    margin: 0 30px;
 }
 
 .redes{
@@ -272,7 +273,7 @@ ol, ul{
 
 .container{
     /* border: 1px solid red; */
-    max-width: 1050px;
+    max-width: 1000px;
     /* width: 100%; */
     flex: 1;
     margin: 0 auto;
@@ -282,3 +283,85 @@ ol, ul{
     height: inherit;
     flex-wrap: inherit;
 }
+
+.bur-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.2);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+  }
+
+  @media screen and (max-width: 1023px){
+    .header{
+        font-size: 0.7em;
+        max-width: 1023px;
+    }
+    .logo{
+        width: 200px;
+    }
+    span{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .busqueda{
+        width: 350px;
+        justify-content: initial;
+    }
+    .buscador{
+        width: 280px;
+    }
+    .cuenta{
+        width: 120px;
+    }
+    .carrito{
+        width: 120px;
+    }
+    .products{
+        height: 600px;
+    }
+    .productos{height: 600px;}
+
+    .ofertas{
+        width: 650px;
+        height: 217px;
+    }
+    .container-slider{
+        width: 650px;
+        height: 217px;
+    }
+
+    .other-products{
+        width: 600px;
+    }
+
+    .ofertas_diarias{
+        width: 140px;
+        height: 140px;
+    }
+    .desc{width: 120px;}
+    .desc h2{font-size: 18px;}
+
+    .contacto{
+        margin: 0 30px;
+    }
+
+    .sociales{
+        margin: 0 30px;
+    }
+    .footer p{
+        font-size: 1em;
+        width: 300px;
+    }
+  }
+
+@media screen and (max-width: 727px){
+    
+}  

@@ -37,7 +37,9 @@ btnLeft.addEventListener('click', function(){
     prev();
 });
 
-setInterval(function(){
+/* setInterval(function(){
     next();
-}, 5000);
+}, 5000); */
 
+/* const menu = document.querySelector('.menu');
+const ipad = window.matchMedia('screen and ()') */
