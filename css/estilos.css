@@ -6,6 +6,7 @@ body{
 
 * {
     font-family: 'Source Sans Pro';
+    box-sizing: border-box;
 }
 
 h2{
@@ -15,7 +16,7 @@ h2{
 
 .header{
     background-color: #242544;
-    width: 100%;
+    /* width: 100%; */
     height: 120px;
     display: flex;
     align-items: center;
@@ -30,12 +31,12 @@ h2{
 
 .logo{
     display: flex;
-    width: 25%;
+    width: 200px
     align-items: center;
 }
 
 .busqueda{
-    width: 40%;
+    width: 350px;
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -47,14 +48,14 @@ h2{
 }
 
 .cuenta{
-    width: 20%;
+    width: 200px;
     display: flex;
     align-items: center;
     padding: 0 30px;
     justify-content: space-between;
 }
 .carrito{
-    width: 15%;
+    width: 200px;
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -78,14 +79,15 @@ h2{
     height: 300px;
 }
 
-.bur-but{
-    width: 40px;
-    height: 40px;
+.menu{
+    align-items: center;
+    justify-content: center;
 }
 
-
 .menu h2{
+    font-family: 'Source Sans Pro';
     font-size: 25px;
+    padding: 0 30px;
 }
 
 .menu ol{
@@ -130,8 +132,8 @@ ol, ul{
 }
 
 .ofertas{
-    width: 800px;
-    height: 300px;
+    width: auto;
+    height: auto;
 }
 
 .container-slider{
@@ -140,6 +142,8 @@ ol, ul{
     box-shadow: 0 0 0 10px #fff,
                 0 15px 50px;
     position: relative;
+    width: inherit;
+    height: inherit;
 }
 
 .slider{
@@ -149,7 +153,8 @@ ol, ul{
 }
 
 .slider_section{
-    width: 100%;
+    width: inherit;
+    height: inherit;
 }
 
 .slider_img{
@@ -187,26 +192,29 @@ ol, ul{
 }
 
 .other-products{
-    height: 300px;
+    width: 800px;
+    height: 400px;
     display: flex;
     margin-top: 40px;
-    /* background: rgba(0, 0, 0, 0.1); */
 }
-
 .ofertas_diarias{
-    width: 180px;
+    width: 200px;
+    margin-right: 20px;
+}
+.ofertas-img{
+    width: 100%;
     height: 180px;
-    margin: 20px;
-    /* background: rgba(0, 0, 0, 0.1); */
 }
 
 .desc{
     background: rgba(0, 0, 0, 0.3);
-    width: 180px;
+    width: 150px;
     height: 60px;
     margin: 20px 0;
     border-radius: 20px;
     text-align: center;
+    padding: 0 1rem;
+    margin: 1rem;
 }
 
 .desc p{
@@ -288,21 +296,22 @@ ol, ul{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color:rgba(0, 0, 0, 0.2);
     display: none;
     line-height: 40px;
+    /* background: rgba(0, 0, 0, 0.3); */
     text-align: center;
     position: fixed;
     z-index: 4;
     left: 5px;
-    top: 5px;
-    color: white;
+    top: 140px;
   }
+
 
   @media screen and (max-width: 1023px){
     .header{
         font-size: 0.7em;
         max-width: 1023px;
+        width: 100%;
     }
     .logo{
         width: 200px;
@@ -325,27 +334,13 @@ ol, ul{
         width: 120px;
     }
     .products{
+        height: 650px;
+    }
+    .productos{
         height: 600px;
-    }
-    .productos{height: 600px;}
-
-    .ofertas{
-        width: 650px;
-        height: 217px;
-    }
-    .container-slider{
-        width: 650px;
-        height: 217px;
+        padding: 30px 25px;
     }
 
-    .other-products{
-        width: 600px;
-    }
-
-    .ofertas_diarias{
-        width: 140px;
-        height: 140px;
-    }
     .desc{width: 120px;}
     .desc h2{font-size: 18px;}
 
@@ -362,6 +357,133 @@ ol, ul{
     }
   }
 
-@media screen and (max-width: 727px){
-    
+@media screen and (max-width: 767px){
+    .bur-button{
+        display: block;
+    }
+    .header{
+        max-width: 767px;
+        width: 100%;
+    }
+    .busqueda{
+        padding: 0 10px 0 20px;
+        width: 250px;
+    }
+    .buscador{
+        width: 230px;
+        font-size: 18px;
+    }
+    .cuenta{
+        padding: 0 20px;
+        width: auto;
+    }
+    .carrito{
+        padding: 0 20px;
+        width: auto;
+    }
+
+    .menu{
+        position: fixed;
+        background-color: rgba(36, 37, 68, 0.8);
+        z-index: 3;
+        left: -100vw;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    .menu.is-active{
+        left: 0;
+    }
+
+    .slider img{
+        object-fit: initial;
+    }
+    .space{
+        width: 0%;
+    }
+    .products{
+        width: 100%;
+        height: auto;
+    }
+    .productos{
+        height: 900px;
+        width: 100%;
+    }
+    .other-products{
+        flex-wrap: wrap;
+        width: auto;
+        padding: 0 30px;
+        justify-content: space-between;
+    }
+    .ofertas_diarias{
+        width: 200px;
+        height: 300px;
+    }
+    /* .header h2{
+        display: none;
+    } */
 }  
+
+@media screen and (max-width: 480px){
+    .header{
+        max-width: 480px;
+        width: 100%;
+    }
+    .logo{
+        width: 130px;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
+    .buscador{
+        width: 200px;
+        font-size: 15px;
+    }
+    .buscador .icon-search{
+        padding: 0;
+        margin: 0;
+    }
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+    .cuenta{
+        padding: 0;
+    }
+    .carrito{
+        padding: 0;
+    }
+
+    .other-products{
+        padding: 0;
+
+    }
+    .ofertas_diarias{
+        width: 140px;
+    }
+
+    .footer{
+        display: block;
+        height: 190px;
+        font-size: 16px;
+    }
+    .contacto{
+        margin-top: 10px;
+    }
+    .contacto p{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+
+}
+
+@media screen and (max-width: 320px){
+
+}
