@@ -14,116 +14,18 @@ h2{
     margin: 0;
 }
 
-.header{
-    background-color: #242544;
-    /* width: 100%; */
-    height: 120px;
-    display: flex;
-    align-items: center;
-    color: white;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-}
-
-.logo{
-    display: flex;
-    width: 200px
-    align-items: center;
-}
-
-.busqueda{
-    width: 350px;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    justify-content: space-between;
-}
-.buscador{
-    width: 300px;
-    font-size: 20px;
-}
-
-.cuenta{
-    width: 200px;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    justify-content: space-between;
-}
-.carrito{
-    width: 200px;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    justify-content: space-between;
-}
-
-.header h1{
-    font-weight: 600;
-    font-size: 30px;
-}
-
 .products{
     display: flex;
     margin-top: 5px;
     height: 700px;
 }
-.space{
-    width: 15%;
-    background-color: #242544;
-    color: white;
-    height: 300px;
-}
 
-.menu{
-    align-items: center;
-    justify-content: center;
-}
-
-.menu h2{
-    font-family: 'Source Sans Pro';
-    font-size: 25px;
-    padding: 0 30px;
-}
-
-.menu ol{
-    height: inherit;
-    font-size: 20px;
-}
-
-.menu ol li{
-    height: inherit;
-    padding: 10px 0;
-}
-
-.menu ol li:hover{
-    background: #434343;
-}
-
-.menu a{
-    color: white;
-    text-decoration: none;
-    height: inherit;
-    align-items: center;
-    padding: 0 10px;
-}
-
-ol, ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.burguer-button{
+/* .burguer-button{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 0;
-}
+} */
 
 .productos{
     width: 85%;
@@ -193,16 +95,15 @@ ol, ul{
 
 .other-products{
     width: 800px;
-    height: 400px;
+    height: auto;
     display: flex;
     margin-top: 40px;
 }
 .ofertas_diarias{
     width: 200px;
-    margin-right: 20px;
+    padding: 10px;
 }
-.ofertas-img{
-    width: 100%;
+.ofertas_img{
     height: 180px;
 }
 
@@ -220,64 +121,6 @@ ol, ul{
 .desc p{
     margin: 0;
 }
-
-.footer{
-    background: #242544;
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contacto{
-    max-width: 400px;
-    color: white;
-    margin: 0 30px;
-}
-
-.contacto p{
-    font-size: 20px;
-}
-
-.social-link{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
-    background-size: 50px 50px;
-}
-
-.sociales{
-    align-items: center;
-    margin: 0 30px;
-}
-
-.redes{
-    height: 50px;
-    align-items: center;
-}
-
-.atencion{
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.atencion h3{
-    margin: 15px 0;
-    padding: 0 30px;
-}
-
-.social-link.facebook{
-    background-image: url(../images/facebook.png);
-}
-.social-link.twitter{
-    background-image: url(../images/gorjeo.png);
-}
-.social-link.instagram{
-    background-image: url(../images/instagram.png);
-}
-
 
 .container{
     /* border: 1px solid red; */
@@ -308,180 +151,98 @@ ol, ul{
 
 
   @media screen and (max-width: 1023px){
-    .header{
-        font-size: 0.7em;
-        max-width: 1023px;
-        width: 100%;
-    }
-    .logo{
-        width: 200px;
-    }
-    span{
-        font-size: 20px;
-        padding: 0 10px;
-    }
-    .busqueda{
-        width: 350px;
-        justify-content: initial;
-    }
-    .buscador{
-        width: 280px;
-    }
-    .cuenta{
-        width: 120px;
-    }
-    .carrito{
-        width: 120px;
-    }
-    .products{
-        height: 650px;
-    }
-    .productos{
-        height: 600px;
-        padding: 30px 25px;
-    }
-
     .desc{width: 120px;}
     .desc h2{font-size: 18px;}
-
-    .contacto{
-        margin: 0 30px;
-    }
-
-    .sociales{
-        margin: 0 30px;
-    }
-    .footer p{
-        font-size: 1em;
-        width: 300px;
-    }
   }
 
 @media screen and (max-width: 767px){
-    .bur-button{
-        display: block;
-    }
-    .header{
-        max-width: 767px;
-        width: 100%;
-    }
-    .busqueda{
-        padding: 0 10px 0 20px;
-        width: 250px;
-    }
-    .buscador{
-        width: 230px;
-        font-size: 18px;
-    }
-    .cuenta{
-        padding: 0 20px;
-        width: auto;
-    }
-    .carrito{
-        padding: 0 20px;
-        width: auto;
-    }
-
-    .menu{
-        position: fixed;
-        background-color: rgba(36, 37, 68, 0.8);
-        z-index: 3;
-        left: -100vw;
-        width: 100vw;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s;
-    }
-
-    .menu.is-active{
-        left: 0;
-    }
-
     .slider img{
         object-fit: initial;
-    }
-    .space{
-        width: 0%;
     }
     .products{
         width: 100%;
         height: auto;
     }
     .productos{
-        height: 900px;
+        height: auto;
         width: 100%;
+    }
+    .ofertas{
+        height: auto;
+    }
+    .ofertas img{
+        object-fit: contain;
+    }
+
+    .slider{
+        height: auto;
     }
     .other-products{
         flex-wrap: wrap;
         width: auto;
-        padding: 0 30px;
         justify-content: space-between;
     }
     .ofertas_diarias{
-        width: 200px;
+        width: 180px;
         height: 300px;
     }
-    /* .header h2{
-        display: none;
-    } */
+    .ofertas_img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .desc{
+        margin: 0;
+        padding: 0;
+    }
 }  
 
 @media screen and (max-width: 480px){
-    .header{
-        max-width: 480px;
-        width: 100%;
+    .productos{
+        height: auto;
     }
-    .logo{
-        width: 130px;
+    .ofertas{
+        height: 240px;
     }
-    .logo h1{
-        font-size: 20px;
-    }
-    .buscador{
-        width: 200px;
-        font-size: 15px;
-    }
-    .buscador .icon-search{
-        padding: 0;
-        margin: 0;
-    }
-    .logo img{
-        width: 70px;
-        height: 70px;
-    }
-    .cuenta{
-        padding: 0;
-    }
-    .carrito{
-        padding: 0;
-    }
-
     .other-products{
-        padding: 0;
+        height: auto;
+    }
 
+    .ofertas{
+        height: auto;
     }
     .ofertas_diarias{
         width: 140px;
+        height: 250px;
+    }
+    .ofertas_img{
+        width: 140px;
+        height: 140px;
     }
 
-    .footer{
-        display: block;
-        height: 190px;
-        font-size: 16px;
-    }
-    .contacto{
-        margin-top: 10px;
-    }
-    .contacto p{
-        width: 100%;
+    .ofertas img{
+        object-fit: contain;
     }
 
+    .slider{
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 375px){
+    .productos{
+        padding: 25px 15px;
+        height: 700px;
+    }
 
+    .ofertas_diarias{
+        width: 120px;
+        height: 250px;
+    }
+    .ofertas_img{
+        width: 120px;
+        height: 120px;
+    }
 }
 
 @media screen and (max-width: 320px){
