@@ -20,13 +20,6 @@ h2{
     height: 700px;
 }
 
-/* .burguer-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-} */
-
 .productos{
     width: 85%;
     padding: 30px 45px;
@@ -140,15 +133,13 @@ h2{
     height: 40px;
     border-radius: 50%;
     display: none;
-    line-height: 40px;
-    /* background: rgba(0, 0, 0, 0.3); */
     text-align: center;
     position: fixed;
     z-index: 4;
     left: 5px;
     top: 140px;
+    font-size: 22px;
   }
-
 
   @media screen and (max-width: 1023px){
     .desc{width: 120px;}
@@ -162,6 +153,10 @@ h2{
     .products{
         width: 100%;
         height: auto;
+    }
+
+    .bur-button{
+        display: block;
     }
     .productos{
         height: auto;
