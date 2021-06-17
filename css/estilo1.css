@@ -84,3 +84,90 @@ h2{
     }
   }
 
+=======
+body{
+    margin: 0;
+    padding-top: 120px;
+    width: 100%;
+}
+
+* {
+    font-family: 'Source Sans Pro';
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 25px;
+    margin: 0;
+}
+
+.products{
+    display: flex;
+    margin: 5px 0;
+    height: auto;
+}
+
+.other_products{
+    width: 800px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto{
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    /* background: grey; */
+    width: 210px;
+    /* width: 20%; */
+    height: 410px; /*Vamos a html ok XD el de procesadores*/
+    
+}
+.nombre{
+    /*font-family: ;*/
+    text-align: center;
+    font-size: 19px;
+}
+.precio{
+    /*font-family: ;*/
+    text-align: center;
+    font-size: 19px;
+}
+
+.agregar{
+    display: flex;
+    bottom: 5px;
+}
+.agregar-carrito{
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    font-size: 18px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bur-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: none;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 140px;
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 769px){
+    .bur-button{
+        display: block;
+    }
+  }
+
