@@ -21,7 +21,7 @@ h2{
 }
 
 .productos{
-    width: 85%;
+    width: 850px;
     padding: 30px 45px;
     height: 700px;
 }
@@ -144,6 +144,34 @@ h2{
   @media screen and (max-width: 1023px){
     .desc{width: 120px;}
     .desc h2{font-size: 18px;}
+
+    .products{
+        width: auto;
+        height: auto;
+    }
+    .productos{
+        width: 100%;
+        height: auto;
+    }
+
+    .ofertas img{
+        object-fit: contain;
+    }
+
+    .slider{
+        height: auto;
+    }
+    .other-products{
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: space-between;
+    }
+    .ofertas_diarias{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
   }
 
 @media screen and (max-width: 767px){

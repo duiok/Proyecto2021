@@ -28,6 +28,13 @@ h2{
     flex-wrap: wrap;
 }
 
+.imagen{
+    height: 125px;
+}
+.descripcion{
+    height: 170px;
+}
+
 .producto{
     margin: 10px;
     border: 1px solid;
@@ -41,23 +48,26 @@ h2{
 .nombre{
     /*font-family: ;*/
     text-align: center;
-    font-size: 19px;
+    font-size: 17px;
 }
 .precio{
     /*font-family: ;*/
     text-align: center;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .agregar{
     display: flex;
     bottom: 5px;
+    margin: 15px 0;
 }
 .agregar-carrito{
     text-align: center;
     display: inline-block;
-    width: 150px;
+    width: 170px;
+    height: 40px;
     font-size: 18px;
+    /* font-weight: bold; */
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -78,9 +88,25 @@ h2{
     font-size: 22px;
   }
 
+  @media screen and (max-width: 1023px){
+      .other_products{
+          width: 100%;
+          justify-content: space-around;
+      }
+  }
+
   @media screen and (max-width: 769px){
     .bur-button{
         display: block;
+    }
+
+    .products{
+        width: auto;
+    }
+    .other_products{
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
   }
 
