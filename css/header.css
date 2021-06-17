@@ -64,6 +64,20 @@
     padding: 0 30px;
     justify-content: space-between;
 }
+
+.entrar_cuenta{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.icon-user{
+    color: white;
+    margin: 0 20px;
+}
+.header h2{
+    color: white;
+}
+
 .carrito{
     width: 200px;
     display: flex;

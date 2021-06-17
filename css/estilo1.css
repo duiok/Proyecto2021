@@ -35,7 +35,7 @@ h2{
     /* background: grey; */
     width: 210px;
     /* width: 20%; */
-    height: 400px; /*Vamos a html ok XD el de procesadores*/
+    height: 410px; /*Vamos a html ok XD el de procesadores*/
     
 }
 .nombre{
@@ -48,9 +48,14 @@ h2{
     text-align: center;
     font-size: 19px;
 }
+
+.agregar{
+    display: flex;
+    bottom: 5px;
+}
 .agregar-carrito{
     text-align: center;
-    display: block;
+    display: inline-block;
     width: 150px;
     font-size: 18px;
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
