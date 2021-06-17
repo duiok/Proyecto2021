@@ -1,3 +1,4 @@
+
 .header{
     background-color: #242544;
     height: 120px;
@@ -382,4 +383,390 @@ ol, ul{
 }
 
 @media screen and (max-width: 320px){
+=======
+.header{
+    background-color: #242544;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.return{
+    display: flex;
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    width: 200px
+}
+.logo h1{
+    text-decoration: none;
+    color: white;
+}
+
+.search{
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    border-radius: 20px;
+}
+.busqueda{
+    background: white;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buscador{
+    width: 320px;
+    font-size: 20px;
+    border: 0;
+}
+.icon-search{
+    color: black;
+}
+
+.header_section{
+    display: flex;
+    flex-direction: initial;
+    height: 32px;
+}
+
+.header_section_second{
+    display: flex;
+    height: 32px;
+}
+
+.cuenta{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+.entrar_cuenta{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.icon-user{
+    color: white;
+    margin: 0 20px;
+}
+.header h2{
+    color: white;
+}
+
+.carrito{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+.header h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.space{
+    width: 155px;
+    background-color: #242544;
+    color: white;
+    height: 300px;
+}
+
+.menu{
+    align-items: center;
+    justify-content: center;
+}
+
+.menu h2{
+    font-family: 'Source Sans Pro';
+    font-size: 25px;
+    padding: 0 30px;
+}
+
+.menu ol{
+    height: inherit;
+    font-size: 20px;
+}
+
+.menu ol li{
+    height: inherit;
+    padding: 10px 0;
+}
+
+.menu ol li:hover{
+    background: #434343;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    align-items: center;
+    padding: 0 10px;
+}
+
+ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer{
+    background: #242544;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacto{
+    max-width: 400px;
+    color: white;
+    margin: 0 30px;
+}
+
+.contacto p{
+    font-size: 20px;
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.sociales{
+    align-items: center;
+    margin: 0 30px;
+}
+
+.redes{
+    height: 50px;
+    align-items: center;
+}
+
+.atencion{
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.atencion h3{
+    margin: 15px 0;
+    padding: 0 30px;
+}
+
+.social-link.facebook{
+    background-image: url(../images/facebook.png);
+}
+.social-link.twitter{
+    background-image: url(../images/gorjeo.png);
+}
+.social-link.instagram{
+    background-image: url(../images/instagram.png);
+}
+
+.container{
+    /* border: 1px solid red; */
+    max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+@media screen and (max-width: 1023px){
+    .header{
+        font-size: 0.7em;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header_section{
+        flex-direction: column-reverse;
+    }
+    .logo{
+        width: 200px;
+    }
+    span{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .contacto{
+        margin: 0 30px;
+    }
+
+    .sociales{
+        margin: 0 30px;
+    }
+    .footer p{
+        font-size: 1em;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    /* .header{
+        justify-content: space-between;
+    } */
+    .space{
+        width: 0;
+    }
+    .logo{
+        align-items: center;
+        width: 150px;
+    }
+    .logo h1{
+        font-size: 28px;
+    }
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .busqueda{
+        width: 300px;
+    }
+    
+    .header_section{
+        flex-direction: column-reverse;
+        flex: auto;
+    }
+    .header_section_second{
+        flex: 1 0 auto;
+        justify-content: flex-end;
+    }
+    .search{
+        width: 100%;
+        flex: 1 0 auto;
+        justify-content: flex-end;
+        padding: 0 20px;
+    }
+
+    .cuenta{
+        padding: 0 20px 0 0;
+        width: 150px;
+    }
+    .carrito{
+        padding: 0 20px 0 0;
+        width: 150px;
+    }
+
+    .menu{
+        position: fixed;
+        background-color: rgba(36, 37, 68, 0.8);
+        z-index: 3;
+        left: -100vw;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    .menu.is-active{
+        left: 0;
+    }
+    .footer{
+        justify-content: initial;
+    }
+    .contacto p{
+        width: 200px;
+        height: auto;
+    }
+    .sociales{
+        margin: 0;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        flex: 1 0 auto;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header{
+        display: block;
+        height: 140px;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+        margin: 10px 0;
+    }
+    .logo h1{
+
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .logo{
+        width: 110px;
+        margin-bottom: 20px;
+    }
+    .header h2{
+        font-size: 19px;
+    }
+    .cuenta{
+        width: auto;
+    }
+    .carrito{
+        width: auto;
+    }
+    
+    .busqueda{
+        width: 250px;
+    }
+    .buscador{
+        width: 230px;
+        font-size: 16px;
+    }
+    .footer{
+        display: block;
+        height: 190px;
+        font-size: 16px;
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+    }
+    .atencion{
+        display: flex;
+        justify-content: center;
+    }
+    .contacto{
+        margin-top: 10px;
+    }
+    .contacto p{
+        width: 100%;
+    }
+    .footer{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 375px){
+    
+}
+
+@media screen and (max-width: 320px){
+
 }
