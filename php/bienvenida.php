@@ -1,23 +1,39 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['usuario'])){
+        echo'
+            <script>
+                alert("Porfavor inicia sesion");
+                window.location = "./sesion.php";
+            </script>
+        ';
+        session_destroy();
+        die();
+        
+    }     
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/jpg" href="images/logo_superior.jpg">
+    <link rel="icon" type="image/jpg" href="../images/logo_superior.jpg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>MACWARE</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../fonts/style.css">
 </head>
 <body>
     <i class="icon-menu bur-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html" class="return">
-                    <img src="images/logo_superior.jpg" alt="logo macware" width="100px" height="100px">
+                <a href="../index.html" class="return">
+                    <img src="../images/logo_superior.jpg" alt="logo macware" width="100px" height="100px">
                     <h1>MAC<br>WARE</h1>
                 </a>
             </div>
@@ -31,8 +47,8 @@
                 </div>
                 <div class="header_section_second">
                     <div class="cuenta">
-                        <a href="php/sesion.php" class="entrar_cuenta">
-                            <h2>Cuenta  </h2>
+                        <a href="cerrar_sesion.php" class="entrar_cuenta">
+                            <h2>Cerrar sesion</h2>
                             <span class="icon-user"></span>
                         </a>
                     </div>
@@ -54,10 +70,10 @@
                     <nav>
                         <ol>
                             <li>
-                                <a class="link" href="index.html">Inicio</a>
+                                <a class="link" href="../index.html">Inicio</a>
                             </li>
                             <li>
-                                <a class="link" href="html/procesadores.html">Procesadores</a>
+                                <a class="link" href="../html/procesadores.html">Procesadores</a>
                             </li>
                             <li>
                                 <a class="link" href="/">Gráficas</a>
@@ -77,13 +93,13 @@
                     <div class="container-slider">
                         <div class="slider" id="slider">
                             <div class="slider_section">
-                                <img src="images/1.png" alt="" class="slider_img" width="100%">
+                                <img src="../images/1.png" alt="" class="slider_img" width="100%">
                             </div>
                             <div class="slider_section">
-                                <img src="images/2.png" alt="" class="slider_img" width="100%">
+                                <img src="../images/2.png" alt="" class="slider_img" width="100%">
                             </div>
                             <div class="slider_section">
-                                <img src="images/3.png" alt="" class="slider_img" width="100%">
+                                <img src="../images/3.png" alt="" class="slider_img" width="100%">
                             </div>
                         </div>
                         <div class="slider_btn slider_btn-left" id="btn-left">
@@ -99,7 +115,7 @@
                 <div class="other-products">
                     <div class="ofertas_diarias">
                         <div class="ofertas_img">
-                            <img src="images/dde.png" alt="discoDuro" width="90%" height="90%">
+                            <img src="../images/dde.png" alt="discoDuro" width="90%" height="90%">
                         </div>
                         <div class="desc">
                             <h2>Articulo patrocinado</h2>
@@ -107,7 +123,7 @@
                     </div>
                     <div class="ofertas_diarias">
                         <div class="ofertas_img">
-                            <img src="images/grafica.png" alt="discoDuro" width="90%" height="90%">
+                            <img src="../images/grafica.png" alt="discoDuro" width="90%" height="90%">
                         </div>
                         <div class="desc">
                             
@@ -115,7 +131,7 @@
                     </div>
                     <div class="ofertas_diarias">
                         <div class="ofertas_img">
-                            <img src="images/mother.png" alt="discoDuro" width="90%" height="90%">
+                            <img src="../images/mother.png" alt="discoDuro" width="90%" height="90%">
                         </div>
                         <div class="desc">
 
@@ -123,7 +139,7 @@
                     </div>
                     <div class="ofertas_diarias">
                         <div class="ofertas_img">
-                            <img src="images/procesador.png" alt="discoDuro" width="90%" height="90%">
+                            <img src="../images/procesador.png" alt="discoDuro" width="90%" height="90%">
                         </div>
                         <div class="desc">
 
@@ -153,7 +169,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/slider.js"></script>
 </body>
 </html>

@@ -13,14 +13,14 @@
 
     if(mysqli_num_rows($validar_login) > 0){
         $_SESSION['usuario'] = $correo;
-        header("location: ../bienvenida.php");
+        header("location: ./bienvenida.php");
         exit();
 
     }else{
         echo'
         <script>
             alert("Usuario inexistente favor de verificar");
-            window.location = "../index.php";
+            window.location = "./sesion.php";
         </script>
         ';
         exit();
