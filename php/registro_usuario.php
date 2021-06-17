@@ -17,7 +17,7 @@
         echo'
         <script>
             alert("Este correo ya esta registrado, prueba con otro");
-            window.location = "../index.php";
+            window.location = "sesion.php";
         </script>
         ';
         exit();
@@ -28,7 +28,7 @@
         echo'
         <script>
             alert("Este usuario ya esta registrado, prueba con otro");
-            window.location = "../index.php";
+            window.location = "sesion.php";
         </script>
         ';
         exit();
@@ -39,14 +39,14 @@
     if($ejecutar){
         echo'
         <script>
-            window.location = "../index.php"
+            window.location = "sesion.php"
         </script>
         ';
     }else{
         echo '
             <script>
             alert("Intentelo de nuevo")
-            window.location = "../index.php"
+            window.location = "sesion.php"
             </script>
         ';
     }
