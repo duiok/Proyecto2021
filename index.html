@@ -1,116 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/png" href="images/logo_superior.jpg">
+    <link rel="icon" type="image/jpg" href="/images/logo_superior.jpg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>MACWARE</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/fonts/style.css">
 </head>
 <body>
+    <i class="icon-menu bur-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
-            <div class="menu">
-                <h2>Menu</h2>
-            </div>
-
             <div class="logo">
-                <img src="/images/logo_superior.jpg" alt="logo macware" width="120px" height="120px">
-                <h1>MAC<br>WARE</h1>
+                <a href="/index.html" class="return">
+                    <img src="/images/logo_superior.jpg" alt="logo macware" width="100px" height="100px">
+                    <h1>MAC<br>WARE</h1>
+                </a>
             </div>
-            <div class="busqueda">
-                <h2>Motor de busqueda</h2>
-            </div>
-            <div class="cuenta">
-                <h2>Cuenta</h2>
-            </div>
-            <div class="carrito">
-                <h2>Carrito</h2>
+            <div class="header_section">
+                <div class="search">
+                    <div class="busqueda">
+                        <!-- <h2>Motor de busqueda  </h2> -->
+                        <input type="" class="buscador">
+                        <span class="icon-search"></span>
+                    </div>
+                </div>
+                <div class="header_section_second">
+                    <div class="cuenta">
+                        <a href="/" class="entrar_cuenta">
+                            <h2>Cuenta  </h2>
+                            <span class="icon-user"></span>
+                        </a>
+                    </div>
+                    <div class="carrito">
+                        <h2>Carrito</h2>
+                        <span class="icon-cart"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
+    
     <section class="products">
         <div class="container">
             <div class="space">
+                <div class="menu">
+                    <h2>MENU</h2>
+                    <nav>
+                        <ol>
+                            <li>
+                                <a class="link" href="/index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="link" href="/html/procesadores.html">Procesadores</a>
+                            </li>
+                            <li>
+                                <a class="link" href="/">Gráficas</a>
+                            </li>
+                            <li>
+                                <a class="link" href="/">Tarjeta madre</a>
+                            </li>
+                            <li>
+                                <a class="link" href="/">Almacenamiento</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
             <div class="productos">
-                <div class="promos">
-                    
-                </div>
-                <div class="other_products">
+                <div class="ofertas">
+                    <div class="container-slider">
+                        <div class="slider" id="slider">
+                            <div class="slider_section">
+                                <img src="images/1.png" alt="" class="slider_img" width="100%">
+                            </div>
+                            <div class="slider_section">
+                                <img src="images/2.png" alt="" class="slider_img" width="100%">
+                            </div>
+                            <div class="slider_section">
+                                <img src="images/3.png" alt="" class="slider_img" width="100%">
+                            </div>
+                        </div>
+                        <div class="slider_btn slider_btn-left" id="btn-left">
+                            &#60;
+                        </div>
+                        <div class="slider_btn slider_btn-rigth" id="btn-right">
+                            &#62;
+                        </div>
 
+                    </div>
+                </div>
+
+                <div class="other-products">
+                    <div class="ofertas_diarias">
+                        <div class="ofertas_img">
+                            <img src="/images/dde.png" alt="discoDuro" width="90%" height="90%">
+                        </div>
+                        <div class="desc">
+                            <h2>Articulo patrocinado</h2>
+                        </div>
+                    </div>
+                    <div class="ofertas_diarias">
+                        <div class="ofertas_img">
+                            <img src="/images/grafica.png" alt="discoDuro" width="90%" height="90%">
+                        </div>
+                        <div class="desc">
+                            
+                        </div>
+                    </div>
+                    <div class="ofertas_diarias">
+                        <div class="ofertas_img">
+                            <img src="/images/mother.png" alt="discoDuro" width="90%" height="90%">
+                        </div>
+                        <div class="desc">
+
+                        </div>
+                    </div>
+                    <div class="ofertas_diarias">
+                        <div class="ofertas_img">
+                            <img src="/images/procesador.png" alt="discoDuro" width="90%" height="90%">
+                        </div>
+                        <div class="desc">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- 
-    <header class="header">
+    <footer class="footer">
         <div class="container">
-            <figure>
-                <img src="images/macware_logo.jpeg" height="100px" alt="logo de http:www.algo.com">
-            </figure>
-            <nav>
-                <ol>
-                    <li>
-                        <a class="link" href="#procesador">Procesadores</a>
-                    </li>
-                    <li>
-                        <a class="link">Gráfica</a>
-                    </li>
-                    <li>
-                        <a class="link">Tarjeta madre</a>
-                    </li>
-                    <li>
-                        <a class="link"></a>
-                    </li>
-                    <li>
-                        <a class="link">Almacenamiento</a>
-                    </li>
-                    <li>
-                        <a class="link" >Gabinetes</a>
-                    </li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-
-    <section id="procesador" class="processor">
-        <div class="container">
-            <div class="product_text">
+            <div class="contacto">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, dolorum repellat ducimus facere quasi placeat rem eaque unde hic. Possimus consectetur repellendus dignissimos veniam id enim molestias ad reprehenderit expedita!
+                    Esto es un trabajo escolar hecho por una empresa 100% mexicana. Los productos, así como los precios son ficticios.
                 </p>
             </div>
-            <figure class="product_image">
-                <img src="images/intel7.png" alt="imagen core i7 intel" width="400px">
-            </figure>
+            <div class="sociales">
+                <div class="redes">
+                    <a href="https://www.facebook.com/roberto.vizcara" class="social-link facebook" target="_blank"></a>
+                    <a href="https://twitter.com/roberto_viz" class="social-link twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/rob_viz/" class="social-link instagram" target="_blank"></a>
+                </div>
+                <div class="atencion">
+                    <h3>Atención a clientes <br> 56 2147 1332</h3>
+                </div>
+            </div>
         </div>
-    </section> -->
-
-
-    <!-- <div class="conteiner">
-        <header>
-            <h1>
-                Desarrolo web perros
-            </h1>
-        </header>
-    
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aliquid ab velit eius neque maxime iusto ipsam quae vero sunt ad exercitationem cupiditate quibusdam et cum, temporibus voluptatem doloribus alias?
-        </p>
-        <p>
-            Pagina web del cuso 2602 de Desarrollo web en la fes acatlán.
-            Enlazate a: <a href="https://www.facebook.com/groups/883269959163637/" target="_black">Desarrollo web</a>
-        </p>
-        
-        <footer>
-            <h5>Derechos reservados. Desing with love ❤ by <a href="https://www.facebook.com/roberto.vizcara" target="_black">Roberto Vizcarra</a></h5>
-        </footer>
-    </div> -->
-
+    </footer>
+    <script src="/js/main.js"></script>
 </body>
 </html>
