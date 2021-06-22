@@ -81,10 +81,10 @@
                 </div>
             </div>
             <div class="other_products">
-                <!-- Primera Tarjeta de video-->
+                <!-- Primer procesador Ryzen 3-->
                 <div class="producto"> 
                     <div class="imagen">
-                        <img src="../images/ryzen3.png" alt="Gráfica" width="100%">
+                        <img src="../images/ryzen3.png" alt="procesador" width="100%">
                     </div>
                     <div class="descripcion">
                         <p class="nombre">Procesador AMD Ryzen 3 3200G con Gráficos Radeon Vega 8, S-AM4, 3.60GHz, Quad-Core, 4MB L3</p>
@@ -96,10 +96,10 @@
                         </button>
                     </div>
                 </div>
-                <!-- Segunda tarjeta de video-->
+                <!-- Segundo procesador Ryzen 5-->
                 <div class="producto">
                     <div class="imagen">
-                        <img src="../images/ryzen5.png" alt="Gráfica" width="100%">
+                        <img src="../images/ryzen5.png" alt="procesador" width="100%">
                     </div>
                     <div class="descripcion">
                         <p class="nombre">Procesador AMD RYZEN 5 3500X 3.6ghz Base, 4.1 GHz Max Boost, 6 Núcleos Socket Am4</p>
@@ -114,7 +114,7 @@
                 <!-- tercero procesador Ryzen 7-->
                 <div class="producto">
                     <div class="imagen">
-                        <img src="../images/ryzen7.png" alt="Gráfica" width="100%">
+                        <img src="../images/ryzen7.png" alt="procesador" width="100%">
                     </div>
                     <div class="descripcion">
                         <p class="nombre">Procesador AMD RYZEN 7 3700X 8 Cores 3.6Ghz Socket AM4</p>

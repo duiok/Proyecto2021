@@ -68,13 +68,13 @@
                                 <a class="link" href="procesadores.php">Procesadores</a>
                             </li>
                             <li>
-                                <a class="link" href="/">Gráficas</a>
+                                <a class="link" href="graficas.php">Gráficas</a>
                             </li>
                             <li>
-                                <a class="link" href="/">Tarjeta madre</a>
+                                <a class="link" href="tarjetamadre.php">Tarjeta madre</a>
                             </li>
                             <li>
-                                <a class="link" href="/">Almacenamiento</a>
+                                <a class="link" href="almacenamiento.php">Almacenamiento</a>
                             </li>
                         </ol>
                     </nav>

@@ -75,10 +75,10 @@
                                 <a class="link" href="html/graficas.php">Gráficas</a>
                             </li>
                             <li>
-                                <a class="link" href="/">Tarjeta madre</a>
+                                <a class="link" href="html/tarjetamadre.php">Tarjeta madre</a>
                             </li>
                             <li>
-                                <a class="link" href="/">Almacenamiento</a>
+                                <a class="link" href="html/almacenamiento.php">Almacenamiento</a>
                             </li>
                         </ol>
                     </nav>
