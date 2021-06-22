@@ -1,14 +1,3 @@
-<?php  
-
-    session_start();
-
-    if(isset($_SESSION['usuario'])){
-        header("Location: bienvenida.php");
-    }
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

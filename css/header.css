@@ -10,11 +10,12 @@
     left: 0;
     right: 0;
     z-index: 2;
+    justify-content: space-between;
 }
 .return{
     display: flex;
     text-decoration: none;
-}
+}   
 .logo{
     display: flex;
     width: 200px
@@ -24,37 +25,20 @@
     color: white;
 }
 
-.search{
-    display: flex;
-    width: 350px;
-    justify-content: center;
-    border-radius: 20px;
-}
-.busqueda{
-    background: white;
-    width: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.buscador{
-    width: 320px;
-    font-size: 20px;
-    border: 0;
-}
 .icon-search{
     color: black;
 }
 
 .header_section{
     display: flex;
-    flex-direction: initial;
     height: 32px;
+    justify-content: right;
 }
 
 .header_section_second{
     display: flex;
     height: 32px;
+    
 }
 
 .cuenta{
@@ -210,7 +194,6 @@ ol, ul{
 @media screen and (max-width: 1023px){
     .header{
         font-size: 0.7em;
-        justify-content: space-between;
         width: 100%;
     }
     .header_section{
@@ -254,10 +237,6 @@ ol, ul{
     .logo img{
         width: 70px;
         height: 70px;
-    }
-
-    .busqueda{
-        width: 300px;
     }
     
     .header_section{
@@ -346,13 +325,6 @@ ol, ul{
         width: auto;
     }
     
-    .busqueda{
-        width: 250px;
-    }
-    .buscador{
-        width: 230px;
-        font-size: 16px;
-    }
     .footer{
         display: block;
         height: 190px;
@@ -377,9 +349,3 @@ ol, ul{
     }
 }
 
-@media screen and (max-width: 375px){
-    
-}
-
-@media screen and (max-width: 320px){
-}
