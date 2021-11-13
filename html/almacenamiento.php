@@ -76,12 +76,297 @@
                             <li>
                                 <a class="link" href="almacenamiento.php">Almacenamiento</a>
                             </li>
+                            <?php
+                            
+                            if(!isset($_SESSION['usuario'])){
+                            ?>  
+
+                            <?php
+                            }else{
+                                $_SESSION['usuario'] = false;
+                            ?>
+                                <li>
+                                    <a class=link href="php/dir.php">Dirección</a>
+                                </li>
+                            <?php
+                            }
+                            ?>
                         </ol>
                     </nav>
                 </div>
             </div>
             <div class="other_products">
-                <!-- Primer procesador Ryzen 3-->
+                <!-- Primer disco duro yeyian-->
+                <div class="producto"> 
+                    <div class="imagen">
+                        <img src="../images/DISCO DURO SOLIDO YEYIAN SSD 250GB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">SSD Yeyian Valk 4000, 250GB, SATA III, M.2</p>
+                        <p class="precio">$800.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- Segundo disco duro solido-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/DISCO DURO SOLIDO YEYIAN SSD 500GB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">SSD Yeyian Valk 3200, 500GB, SATA III, 2.5</p>
+                        <p class="precio">$1,200.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- tercera disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO SOLIDO KINGSTON SSD 240GB SATA III.png" alt="Discoduro" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Kingston SSD A400 240GB SATA 3 (6Gb/s) 2.5" Lectura: 500MB/s y Escritura: 350MB/s (SA400S37/240G)</p>
+                        <p class="precio">$1,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- cuarto disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO SOLIDO KINGSTON SSD 480GB SATA III.png" alt="Discoduro" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Kingston SSD A400 480GB M.2 SATA 2280 Lectura: 500MB/s y Escritura: 450MB/s (SA400M8/480G)</p>
+                        <p class="precio">$1,400.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- quinto disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO SOLIDO KINGSTON SSD 960GB SATA III.png" alt="Discoduro" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Kingston SSD A400 960GB SATA 3 (6Gb/s) 2.5" Lectura: 500MB/s y Escritura: 450MB/s (SA400S37/960G)</p>
+                        <p class="precio">$2,200.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- sexto disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO SOLIDO WESTERN DIGITAL SSD 250GB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">WD Blue 3D NAND SSD 250GB</p>
+                        <p class="precio">$1,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- septimo disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO SOLIDO WESTERN DIGITAL SSD 500GB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">WD Blue 3D NAND SSD 500GB</p>
+                        <p class="precio">$2,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- octavo disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO SOLIDO WESTERN DIGITAL SSD 1TB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">WD Blue SSD M.2 1TB</p>
+                        <p class="precio">$3,300.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- noveno disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 15px;">
+                        <img src="../images/DISCO DURO SOLIDO ADATA SSD 500GB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">ADATA- Disco de Estado sólido Falcon 3D NAND PCIe Gen3x4 NVMe M.2 2280 Velocidad de Lectura/1500 MB/s SSD Interno</p>
+                        <p class="precio">$1,800.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- decimo disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 15px;">
+                        <img src="../images/DISCO DURO SOLIDO ADATA SSD 1TB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Unidad de Estado Solido ADATA SSD SU800 1T 3D NAND, 2.5",TLC, 560 MB/s de lectura y 520 MB/s de escritura</p>
+                        <p class="precio">$2,500.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- onceavo disco duro-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO INTERNO SEAGATE 500GB SATA III.png" alt="Discoduro" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Seagate ST500DM002 500GB 7200RPM SATA3/SATA 6.0 GB/s 16MB Hard Drive (3.5 inch)</p>
+                        <p class="precio">$800.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- doceavo disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 10px;">
+                        <img src="../images/DISCO DURO INTERNO SEAGATE BARRACUDA 1TB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Seagate Barracuda ST500LMZ30 - Disco Duro Interno (SATA, 6 GB/s, 128 MB, caché de 2,5", 7 mm), 1 TB</p>
+                        <p class="precio">$1,200.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- terceveao disco duro solido-->
+                <div class="producto" >
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO INTERNO SEAGATE BARRACUDA 2TB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Seagate BarraCuda Internal Hard Drive 2TB SATA 6Gb/s 128MB Cache 2.5-Inch 7mm</p>
+                        <p class="precio">$4,300.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- cuartoavo disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO TOSHIBA 500GB.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">500GB Toshiba 2.5 pulgadas laptop disco duro SATA (5400 rpm, memoria caché 8MB)</p>
+                        <p class="precio">$600.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- quinteavo disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO INTERNO TOSHIBA 1TB.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Disco duro Toshiba desk 3.5 1 tb sata3 6gb/s 64mb 7200rpm p/pc/bulk</p>
+                        <p class="precio">$1,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- sexteavo disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 5px;">
+                        <img src="../images/DISCO DURO INTERNO TOSHIBA 2TB.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Disco duro Toshiba desk 3.5 2tb sata3 6gb/s 64mb 7200rpm p/pc/bulk</p>
+                        <p class="precio">$1,800.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- diecisieteavo disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO INTERNO WESTERN 500GB SATA III.png" alt="Discoduro" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Western Digital WD5000AZLX Disco Duro de 500GB para PC de Computo Básico, Sata 3, 6 GB/s, 32 MB, 3.5", Blue</p>
+                        <p class="precio">$1,200.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- decimoctavo no se los numeros la neta disco duro solido-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/DISCO DURO INTERNO WESTERN 1TB SATA III.png" alt="procesador" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Western Digital Caviar Blue 1TB 3.5" 7200rpm SATA 6Gb/s 64MB -(Serial ATA III, 1000 GB, 1.2 Watts, 6.8 Watts, 6.8 Watts)</p>
+                        <p class="precio">$1,800.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!--Primer procesador Ryzen 3
                 <div class="producto"> 
                     <div class="imagen">
                         <img src="../images/ryzen3.png" alt="procesador" width="100%">
@@ -96,7 +381,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- Segundo procesador Ryzen 5-->
+                Segundo procesador Ryzen 5
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/ryzen5.png" alt="procesador" width="100%">
@@ -111,7 +396,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- tercero procesador Ryzen 7-->
+                tercero procesador Ryzen 7
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/ryzen7.png" alt="procesador" width="100%">
@@ -126,7 +411,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- cuarto procesador Ryzen 9-->
+                <cuarto procesador Ryzen 9
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/ryzen9.png" alt="procesador" width="100%">
@@ -141,7 +426,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- quinto procesador threadripper-->
+                <quinto procesador threadripper
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/threadripper.png" alt="procesador" width="100%">
@@ -156,7 +441,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- sexto procesador intel i3-->
+                sexto procesador intel i3
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/i3.png" alt="procesador" width="100%">
@@ -171,7 +456,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- septimo procesador intel i5-->
+                septimo procesador intel i5
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/i5.png" alt="procesador" width="100%">
@@ -186,7 +471,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- octavo procesador intel i7-->
+                <octavo procesador intel i
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/i7.png" alt="procesador" width="100%">
@@ -201,7 +486,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- noveno procesador intel i9-->
+                noveno procesador intel i9
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/i9.png" alt="procesador" width="100%">
@@ -216,6 +501,7 @@
                         </button>
                     </div>
                 </div>
+                -->
             </div>
         </div>
     </section>

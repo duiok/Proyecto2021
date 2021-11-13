@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+    session_start(); 
+?>
 <html lang="es">
 <head>
     <link rel="icon" type="image/jpg" href="images/logo_superior.jpg">
@@ -26,7 +29,7 @@
                 <div class="header_section_second">
                     <div class="cuenta">
                         <?php
-                            session_start(); 
+                            
                             if(!isset($_SESSION['usuario'])){
                             ?>  
                                 <a href="php/sesion.php" class="entrar_cuenta">
@@ -80,6 +83,21 @@
                             <li>
                                 <a class="link" href="html/almacenamiento.php">Almacenamiento</a>
                             </li>
+                            <?php
+                            
+                            if(!isset($_SESSION['usuario'])){
+                            ?>  
+
+                            <?php
+                            }else{
+                                $_SESSION['usuario'] = false;
+                            ?>
+                                <li>
+                                    <a class=link href="php/dir.php">Dirección</a>
+                                </li>
+                            <?php
+                            }
+                        ?>
                         </ol>
                     </nav>
                 </div>
@@ -114,7 +132,7 @@
                             <img src="images/dde.png" alt="discoDuro" width="90%" height="90%">
                         </div>
                         <div class="desc">
-                            <h2>Articulo patrocinado</h2>
+                            <h2>25% de descuento</h2>
                         </div>
                     </div>
                     <div class="ofertas_diarias">
@@ -122,7 +140,7 @@
                             <img src="images/grafica.png" alt="discoDuro" width="90%" height="90%">
                         </div>
                         <div class="desc">
-                            
+                        <h2>15% de descuento</h2>
                         </div>
                     </div>
                     <div class="ofertas_diarias">
@@ -130,7 +148,7 @@
                             <img src="images/mother.png" alt="discoDuro" width="90%" height="90%">
                         </div>
                         <div class="desc">
-
+                        <h2>20% de descuento</h2>
                         </div>
                     </div>
                     <div class="ofertas_diarias">
@@ -138,7 +156,7 @@
                             <img src="images/procesador.png" alt="discoDuro" width="90%" height="90%">
                         </div>
                         <div class="desc">
-
+                            <h2>30% de descuento</h2>
                         </div>
                     </div>
                 </div>

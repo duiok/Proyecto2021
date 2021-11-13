@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.info{
+    /* background-color: #9bf9ff; */
+    background-color: #242544;
+    /* background-color: #0083a2; */
+    height: auto;
+    /* display: flex; */
+}
+.info_usuario{
+    color: white;
+    font-size: 25px;
+    width: 300px;
+}
+.usuario{
+    display: flex;
+    justify-content: space-around;
+}
+
+.direccion{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.entrada_direccion input{
+    display: flex;
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.entrada_direccion button{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+}
+
+.botones{
+    width: auto;
+    margin-top: 30px;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    background: #242544;
+}
+
+.cerrar_sesion{
+    width: 400px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    /* justify-content:initial; */
+    justify-content: space-between;
+}
+
+.cerrar_sesion button{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.container{
+    /* border: 1px solid red; */
+    max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+
+@media screen and (max-width: 480px){
+    .usuario{
+        justify-content: initial;
+    }
+    .entrada_direccion input{
+        width: 300px;
+    }
+
+    .cerrar_sesion{
+        flex-direction: column;
+        justify-content: center;
+        width: initial;
+    }
+
+    .cerrar_sesion form{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .img_usuario{
+        display: flex;
+        align-items: center;
+    }
+
+    .img_usuario img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .entrada_direccion input{
+        width: 300px;
+    }
+}

@@ -7,7 +7,7 @@
     $correo = $_POST['correo'];
     $contrasena = $_POST['contrasena'];
     $contrasena = hash('sha512', $contrasena);
-    //$_SESSION['usuario'] = false;
+    
 
 
     $validar_login = mysqli_query($conexion, "SELECT * FROM datos WHERE email ='$correo' and Contrasena = '$contrasena'");

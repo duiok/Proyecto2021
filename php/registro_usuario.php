@@ -1,9 +1,7 @@
 <?php
     
-  
     include 'comprobacion.php';
   
-   
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];

@@ -76,13 +76,28 @@
                             <li>
                                 <a class="link" href="almacenamiento.php">Almacenamiento</a>
                             </li>
+                            <?php
+                            
+                            if(!isset($_SESSION['usuario'])){
+                            ?>  
+
+                            <?php
+                            }else{
+                                $_SESSION['usuario'] = false;
+                            ?>
+                                <li>
+                                    <a class=link href="..php/dir.php">Dirección</a>
+                                </li>
+                            <?php
+                            }
+                        ?>
                         </ol>
                     </nav>
                 </div>
             </div>
             <div class="other_products">
                 <!-- Primer procesador Ryzen 3-->
-                <div class="producto"> 
+                <div class="producto" > 
                     <div class="imagen">
                         <img src="../images/ryzen3.png" alt="procesador" width="100%">
                     </div>

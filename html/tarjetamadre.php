@@ -76,12 +76,118 @@
                             <li>
                                 <a class="link" href="almacenamiento.php">Almacenamiento</a>
                             </li>
+                            <?php
+                            
+                            if(!isset($_SESSION['usuario'])){
+                            ?>  
+
+                            <?php
+                            }else{
+                                $_SESSION['usuario'] = false;
+                            ?>
+                                <li>
+                                    <a class=link href="php/dir.php">Dirección</a>
+                                </li>
+                            <?php
+                            }
+                            ?>
                         </ol>
                     </nav>
                 </div>
             </div>
             <div class="other_products">
-                <!-- Primer procesador Ryzen 3-->
+                <!-- Primera tarjeta madre azus Z590-->
+                <div class="producto"> 
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/TARJETA MADRE ASUS ATX Z590 INTEL.png" alt="tarjetamadre" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta madre Intel Z590 ATX, tres puertos M.2, HDMI, DisplayPort, Ethernet Intel 2.5 Gb, USB 3.2 Gen 2x2 Tipo-C en el panel frontal e iluminación Aura Sync RGB</p>
+                        <p class="precio">$4,800.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- Segunda tarjeta madre azus ROG B450-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/TARJETA MADRE ASUS ROG STRIX B450-F GAMING II AMD.png" alt="tarjetamadre" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta madre para juegos AMD AM4 B450 ATX con soporte hasta DDR4 3200MHz, SATA 6Gbps, HDMI 2.0, dual NVMe M.2, USB 3.1 Gen 2, e iluminación Aura Sync RGB LED</p>
+                        <p class="precio">$4,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- tercera tarjeta madre gygabite A520-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/TARJETA MADRE GIGABYTE A520M-DS3H.png" alt="tarjetamadre" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Gigabyte A520M-DS3H(AMD Ryzen AM4/MicroATX/4+3 fases digital PWM/Gigabyte Gaming GbE LAN/NVMe PCIe 3.0 x4 M.2/3 interfaces de visualización/RGB Fusion 2.0/placa madre)</p>
+                        <p class="precio">$8,300.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- cuarta tarjeta madre GIGABYTE GA-A320M-S2H AMD RYZEN-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/TARJETA MADRE GIGABYTE GA-A320M-S2H AMD RYZEN.png" alt="tarjetamadre" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Gigabyte GA-A320M-S2H Motherboard, AMD Ryzen AM4, MicroATX, 2xDDR4, HDMI, Realtek ALC887, 3xPCIe, USB3.1 Gen 1, LAN</p>
+                        <p class="precio">$1,400.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- quinta TARJETA MADRE GIGABYTE GA-AX370-GAMING 5 AMD-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/TARJETA MADRE GIGABYTE GA-AX370-GAMING 5 AMD.png" alt="tarjetamadre" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Gigabyte GA-AX370-GAMING 5 AMD, WiFi Placa Base X470 Socket AM4 ATX, DDR4-SDRAM, DIMM, Dual, 16GB, 64 GB</p>
+                        <p class="precio">$50,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- sexta TARJETA MADRE GIGABYTE HA10M-->
+                <div class="producto">
+                    <div class="imagen" style="margin-left: 16px; margin-top: 12px;">
+                        <img src="../images/TARJETA MADRE GIGABYTE HA10M.PNG" alt="tarjetamadre" width="100%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Gigabyte HA10M H(AMD Ryzen AM4/MicroATX/Gigabyte Gaming GbE LAN/3 interfaces de visualización/RGB Fusion 2.0/placa madre)</p>
+                        <p class="precio">$2,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Primer procesador Ryzen 3
                 <div class="producto"> 
                     <div class="imagen">
                         <img src="../images/ryzen3.png" alt="procesador" width="100%">
@@ -96,7 +202,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- Segundo procesador Ryzen 5-->
+                Segundo procesador Ryzen 5
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/ryzen5.png" alt="procesador" width="100%">
@@ -111,7 +217,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- tercero procesador Ryzen 7-->
+                tercero procesador Ryzen 7
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/ryzen7.png" alt="procesador" width="100%">
@@ -126,7 +232,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- cuarto procesador Ryzen 9-->
+                cuarto procesador Ryzen 9
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/ryzen9.png" alt="procesador" width="100%">
@@ -141,7 +247,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- quinto procesador threadripper-->
+                quinto procesador threadripper
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/threadripper.png" alt="procesador" width="100%">
@@ -156,7 +262,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- sexto procesador intel i3-->
+                sexto procesador intel i3
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/i3.png" alt="procesador" width="100%">
@@ -171,7 +277,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- septimo procesador intel i5-->
+                septimo procesador intel i5
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/i5.png" alt="procesador" width="100%">
@@ -186,7 +292,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- octavo procesador intel i7-->
+                octavo procesador intel i7
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/i7.png" alt="procesador" width="100%">
@@ -201,7 +307,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- noveno procesador intel i9-->
+                noveno procesador intel i9
                 <div class="producto">
                     <div class="imagen">
                         <img src="../images/i9.png" alt="procesador" width="100%">
@@ -215,7 +321,9 @@
                             Agregar al carrito
                         </button>
                     </div>
-                </div>
+                
+                </div> Mejor lo borramos no?? para no dejar todas esas lineas de codigo ahí nada más
+                -->
             </div>
         </div>
     </section>

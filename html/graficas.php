@@ -76,63 +76,33 @@
                             <li>
                                 <a class="link" href="almacenamiento.php">Almacenamiento</a>
                             </li>
+                            <?php
+                            
+                            if(!isset($_SESSION['usuario'])){
+                            ?>  
+
+                            <?php
+                            }else{
+                                $_SESSION['usuario'] = false;
+                            ?>
+                                <li>
+                                    <a class=link href="..php/dir.php">Dirección</a>
+                                </li>
+                            <?php
+                            }
+                        ?>
                         </ol>
                     </nav>
                 </div>
             </div>
             <div class="other_products">
-                <!-- Primera Tarjeta de video-->
+                <!-- Primer grafica 1060 msi-->
                 <div class="producto"> 
                     <div class="imagen">
-                        <img src="../images/ryzen3.png" alt="Gráfica" width="100%">
+                        <img src="../images/msi1060.png" alt="procesador" width="90%">
                     </div>
                     <div class="descripcion">
-                        <p class="nombre">Procesador AMD Ryzen 3 3200G con Gráficos Radeon Vega 8, S-AM4, 3.60GHz, Quad-Core, 4MB L3</p>
-                        <p class="precio">$4,000.00</p>
-                    </div>
-                    <div class="agregar">
-                        <button class="agregar-carrito">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-                <!-- Segunda tarjeta de video-->
-                <div class="producto">
-                    <div class="imagen">
-                        <img src="../images/ryzen5.png" alt="Gráfica" width="100%">
-                    </div>
-                    <div class="descripcion">
-                        <p class="nombre">Procesador AMD RYZEN 5 3500X 3.6ghz Base, 4.1 GHz Max Boost, 6 Núcleos Socket Am4</p>
-                        <p class="precio">$4,500.00</p>
-                    </div>
-                    <div class="agregar">
-                        <button class="agregar-carrito">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-                <!-- tercero procesador Ryzen 7-->
-                <div class="producto">
-                    <div class="imagen">
-                        <img src="../images/ryzen7.png" alt="Gráfica" width="100%">
-                    </div>
-                    <div class="descripcion">
-                        <p class="nombre">Procesador AMD RYZEN 7 3700X 8 Cores 3.6Ghz Socket AM4</p>
-                        <p class="precio">$8,300.00</p>
-                    </div>
-                    <div class="agregar">
-                        <button class="agregar-carrito">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-                <!-- cuarto procesador Ryzen 9-->
-                <div class="producto">
-                    <div class="imagen">
-                        <img src="../images/ryzen9.png" alt="procesador" width="100%">
-                    </div>
-                    <div class="descripcion">
-                        <p class="nombre">AMD - Procesador RYZEN 9 5900X, 3.7GHz, 12 Núcleos - Socket AM4</p>
+                        <p class="nombre">Tarjeta de Video MSI NVIDIA GeForce GTX 1060 GamingX, 6GB 192-bit GDDR5, PCI Express 3.0 x16</p>
                         <p class="precio">$13,000.00</p>
                     </div>
                     <div class="agregar">
@@ -141,14 +111,14 @@
                         </button>
                     </div>
                 </div>
-                <!-- quinto procesador threadripper-->
+                <!-- Segundo grafica 1060 tuf-->
                 <div class="producto">
                     <div class="imagen">
-                        <img src="../images/threadripper.png" alt="procesador" width="100%">
+                        <img src="../images/asus1060.png" alt="procesador" width="90%">
                     </div>
                     <div class="descripcion">
-                        <p class="nombre">AMD Ryzen Threadripper 3970X 32-Core, procesador de computadora Desbloqueado de 64 Hilos, sin refrigerador, CPU</p>
-                        <p class="precio">$50,000.00</p>
+                        <p class="nombre">Tarjeta de Video ASUS NVIDIA GeForce GTX 1060 Dual OC, 3GB 192-bit GDDR5, PCI Express 3.0</p>
+                        <p class="precio">$10,500.00</p>
                     </div>
                     <div class="agregar">
                         <button class="agregar-carrito">
@@ -156,14 +126,14 @@
                         </button>
                     </div>
                 </div>
-                <!-- sexto procesador intel i3-->
+                <!-- tercero grafica 1070 msi-->
                 <div class="producto">
                     <div class="imagen">
-                        <img src="../images/i3.png" alt="procesador" width="100%">
+                        <img src="../images/msi1070.png" alt="procesador" width="90%">
                     </div>
                     <div class="descripcion">
-                        <p class="nombre">Intel BX8070110100F Core i3-10100F / 3,6 GHz / 6 MB LGA1200 4C / 8T</p>
-                        <p class="precio">$2,000.00</p>
+                        <p class="nombre">Tarjeta de Video MSI NVIDIA GeForce GTX 1070 Gaming X, 8GB 256-bit GDDR5, PCI Express x16 3.0</p>
+                        <p class="precio">$13,500.00</p>
                     </div>
                     <div class="agregar">
                         <button class="agregar-carrito">
@@ -171,14 +141,14 @@
                         </button>
                     </div>
                 </div>
-                <!-- septimo procesador intel i5-->
+                <!-- cuarto grafica 1070 asus-->
                 <div class="producto">
                     <div class="imagen">
-                        <img src="../images/i5.png" alt="procesador" width="100%">
+                        <img src="../images/asus1070.png" alt="procesador" width="90%">
                     </div>
                     <div class="descripcion">
-                        <p class="nombre">Intel Procesador Core i5-10400 - S-1200-2.90GHz - Six-Core - 12MB Smart Cache (10ma. Generación - Comet Lake)</p>
-                        <p class="precio">$4,700.00</p>
+                        <p class="nombre">Tarjeta de Video ASUS NVIDIA GeForce GTX 1070 STRIX OC, 8GB 256-bit GDDR5, PCI Express 3.0</p>
+                        <p class="precio">$11,500.00</p>
                     </div>
                     <div class="agregar">
                         <button class="agregar-carrito">
@@ -186,29 +156,179 @@
                         </button>
                     </div>
                 </div>
-                <!-- octavo procesador intel i7-->
+                <!-- quinto grafica 1080 msi-->
                 <div class="producto">
                     <div class="imagen">
-                        <img src="../images/i7.png" alt="procesador" width="100%">
+                        <img src="../images/msi1080.png" alt="procesador" width="90%">
                     </div>
                     <div class="descripcion">
-                        <p class="nombre">Intel Procesador Core i7-10700 UHD Graphics 630 - S-1200-2.90GHz - Octa-Core - 16MB Caché - 10ma Generación</p>
-                        <p class="precio">$8,300.00</p>
-                    </div>
-                    <div class="agregar">
-                        <button class="agregar-carrito">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-                <!-- noveno procesador intel i9-->
-                <div class="producto">
-                    <div class="imagen">
-                        <img src="../images/i9.png" alt="procesador" width="100%">
-                    </div>
-                    <div class="descripcion">
-                        <p class="nombre">Intel Core i9-10900K - Procesador de sobremesa (10 núcleos hasta 5,3 GHz, Desbloqueado LGA1200 (chipset Serie 400) 125 W</p>
+                        <p class="nombre">Tarjeta de Video MSI NVIDIA GeForce GTX 1080 Gaming, 8GB 256-bit GDDR5X, PCI Express x16 3.0</p>
                         <p class="precio">$15,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- sexto grafica 1080 asus-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/asus1080.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video ASUS ROG STRIX NVIDIA GeForce GTX 1080 GAMING, 8GB 256-bit GDDR5X, PCI Express 3.0</p>
+                        <p class="precio">$26,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- septimo grafica 2060 msi-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/msi2060.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video MSI NVIDIA GeForce RTX 2060 Gaming Z, 6GB 192-bit GDDR6, PCI Express x16 3.0</p>
+                        <p class="precio">$16,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- octavo grafica 2060 asus-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/asus2060.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video ASUS NVIDIA GeForce RTX 2060 Rog Strix Gaming Advanced Edition, 6GB 192-bit GDDR6, PCI Express x16 3.0</p>
+                        <p class="precio">$16,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- noveno grafica 2070 msi-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/msi2070.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video MSI NVIDIA GeForce RTX 2070 Gaming X, 8GB 256-bit GDDR6, PCI Express x16 3.0</p>
+                        <p class="precio">$15,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- decimo grafica 2070 nvidia-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/nvidia2070.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video ASUS NVIDIA GeForce RTX 2070 ROG Strix Gaming OC, 8GB 256-bit GDDR6, PCI Express 3.0</p>
+                        <p class="precio">$18,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- noveno grafica 3060 msi-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/msi3060.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video MSI NVIDIA GeForce RTX 3060 Gaming X 12G, 12GB 192-bit GDDR6, PCI Express 4.0</p>
+                        <p class="precio">$23,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- noveno grafica 3060 asus-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/asus3060.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video ASUS NVIDIA GeForce RTX 3060 Ti TUF Gaming OC Edition, 8GB 256-bit GDDR6, PCI Express 4.0</p>
+                        <p class="precio">$23,200.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- noveno grafica 3070 msi-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/msi3070.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video MSI NVIDIA GeForce RTX 3070 VENTUS 2X OC, 8GB 256-bit GDDR6, PCI Express 4.0</p>
+                        <p class="precio">$31,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- noveno grafica 3070 asus-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/asus3070.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video ASUS NVIDIA GeForce RTX 3070 Rog Strix Gaming, 8GB 256-bit GDDR6, PCI Express 4.0</p>
+                        <p class="precio">$32,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- noveno grafica 3080 msi-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/msi3080.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video MSI NVIDIA GeForce RTX 3080 VENTUS 3X OC, 10GB 320-bit GDDR6X, PCI Express x16 4.0</p>
+                        <p class="precio">$28,000.00</p>
+                    </div>
+                    <div class="agregar">
+                        <button class="agregar-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- noveno grafica 3080 asus-->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="../images/asus3080.png" alt="procesador" width="90%">
+                    </div>
+                    <div class="descripcion">
+                        <p class="nombre">Tarjeta de Video ASUS NVIDIA GeForce TUF RTX 3080 Gaming, 10GB 320-bit GDDR6X, PCI Express 4.0</p>
+                        <p class="precio">$40,000.00</p>
                     </div>
                     <div class="agregar">
                         <button class="agregar-carrito">
